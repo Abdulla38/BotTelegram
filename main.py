@@ -19,11 +19,11 @@ async def start(message: types.Message):
     text = f'Привет.'
     text2 = f'Я бот журнал.'
     text3 = f'Я записиваю в мою базу данных учеников которые не пришли в школу.\n'
-    text3 += f'Узнать по подробнее "ПОДРОБНЕЕ"'
+    text3 += f'Узнать по подробнее "Подробнее"'
     await bot.send_message(message.from_user.id, text, reply_markup=markup)
     await bot.send_message(message.from_user.id, text2)
     await bot.send_message(message.from_user.id, text3)
-    if message.text == 'ПОДРОБНЕЕ':
+    if message.text == 'Подробнее':
         await more()
 
 
