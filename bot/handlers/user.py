@@ -15,7 +15,9 @@ async def start(message: types.Message):
 
 
 async def more(message: types.Message):
-    resp_msg = "/write - записать список учеников\n/write_down - записать отсуствещих\n/show_now - показать отсуствущих на сегодня\n"
+    resp_msg = "/write - записать список учеников\n/write_down - записать отсутствующих\n"
+    resp_msg += "/show_now - показать отсуствущих на сегодня\n/show_all - Показать отсутствующих всю четверть"
+    resp_msg += "/"
     await message.bot.send_message(message.from_user.id, resp_msg)
 
 
