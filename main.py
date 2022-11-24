@@ -1,9 +1,9 @@
 import asyncio
 from aiogram import Bot, Dispatcher, executor
 import logging
-from bot.env import Env
+from setting_bot.env import Env
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
-from bot.handlers.user import register_user_handler
+from setting_bot.handlers.user import register_user_handler
 
 # Create bot, loop and logging
 logging.basicConfig(level=logging.INFO)

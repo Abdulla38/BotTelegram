@@ -1,6 +1,6 @@
 import asyncio
 import asyncpg
-from bot.env import Env
+from SetBot.env import Env
 
 loop = asyncio.get_event_loop()
 
@@ -12,7 +12,7 @@ async def run():
         password=Env.PASSWORD,
         database=Env.DATABASE
     )
-    await connect.fetch()
+    await connect.execute()
     await connect.close()
 
 

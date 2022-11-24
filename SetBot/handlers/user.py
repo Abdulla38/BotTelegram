@@ -1,5 +1,5 @@
 from aiogram import Dispatcher, types
-from bot.keyboards import markup
+from setting_bot.keyboards import markup
 
 
 async def start(message: types.Message):
