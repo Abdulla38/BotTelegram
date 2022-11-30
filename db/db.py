@@ -1,6 +1,6 @@
 import asyncio
 import asyncpg
-from SetBot.env import Env
+from env import Env
 
 loop = asyncio.get_event_loop()
 
